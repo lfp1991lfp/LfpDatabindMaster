@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="contentBean"
+            type="com.lfp.lfp_databind_master.xml.bean.ContentBean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/ws_main_bg"
+            android:gravity="center_vertical|start"
+            android:padding="15dp"
+            android:text="@{contentBean.text}"
+            android:textColor="#8a000000" />
+    </LinearLayout>
+</layout>
